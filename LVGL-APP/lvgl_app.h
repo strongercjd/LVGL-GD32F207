@@ -6,7 +6,7 @@
   #include "lv_port_disp.h"
   #include "lv_port_indev.h"
 #else
-  #include "lvgl/lvgl.h"
+  #include "../Third_Party/LVGL/lvgl/lvgl.h"
   #include "lv_drivers/display/monitor.h"
   #include "lv_drivers/indev/mouse.h"
   #include "lv_drivers/indev/mousewheel.h"

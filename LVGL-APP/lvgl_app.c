@@ -1,7 +1,7 @@
 #include "lvgl_app.h"
 
 
-extern lv_indev_t * indev_keypad;
+//extern lv_indev_t * indev_keypad;
 
 static void my_event_cb(lv_event_t * event)
 {
@@ -30,8 +30,8 @@ void lvgl_app_create()
   lv_obj_align(labe2, LV_ALIGN_CENTER, 0, 0);
   lv_obj_add_event_cb(labe2, my_event_cb1, LV_EVENT_CLICKED, NULL);
   
-  lv_group_t * group = lv_group_create();
-  lv_group_add_obj(group, label);
-  lv_group_add_obj(group, labe2);
-  lv_indev_set_group(indev_keypad, group);
+//  lv_group_t * group = lv_group_create();
+//  lv_group_add_obj(group, label);
+//  lv_group_add_obj(group, labe2);
+//  lv_indev_set_group(indev_keypad, group);
 }
