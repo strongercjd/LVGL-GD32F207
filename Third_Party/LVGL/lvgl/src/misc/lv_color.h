@@ -591,7 +591,15 @@ static inline uint8_t lv_color_brightness(lv_color_t color)
 
 static inline lv_color_t lv_color_make(uint8_t r, uint8_t g, uint8_t b)
 {
+#if LV_COLOR_DEPTH == 16
+    lv_color16_t color;
+    color.ch.blue  = (uint16_t)(b >> 3);
+    color.ch.green = (uint16_t)(g >> 2);
+    color.ch.red   = (uint16_t)(r >> 3);
+    return color;
+#else
     return _LV_COLOR_MAKE_TYPE_HELPER LV_COLOR_MAKE(r, g, b);
+#endif
 }
 
 static inline lv_color_t lv_color_hex(uint32_t c)

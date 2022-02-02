@@ -1,7 +1,7 @@
-﻿/**
- * @file lv_label.c
- *
- */
+//﻿/**
+// * @file lv_label.c
+// *
+// */
 
 /*********************
  *      INCLUDES
