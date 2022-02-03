@@ -14,6 +14,12 @@ Keil版本：V5.25.2.0
 
 QT版本：Qt Creator 4.12.2   Qt 5.14.2
 
+# 关于example说明
+
+example都是测试用例，比如将example\00-基础对象文件夹中的lvgl_app.c复制到\LVGL-APP文件夹中，覆盖员原来的文件，就可以在单片机和QT中看到运行结果。
+
+如果**example中某个例子中有多个文件**，不仅仅有lvgl_app.c和lvgl_app.h，那么多出来的文件，就需要在IAR，Keil或QT的工程文件中添加这些文件。
+
 # 文件夹说明
 
 | 文件夹      | 说明                                                      |
