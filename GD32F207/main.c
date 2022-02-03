@@ -90,7 +90,7 @@ int main(void)
   printf("\r\n======================================================================");
   printf("\r\n=               (C) COPYRIGHT 2022                                   =");
   printf("\r\n=                                                                    =");
-  printf("\r\n=                GD32F20x LVGVL                                      =");
+  printf("\r\n=                GD32F20x LVGL                                      =");
   printf("\r\n=                                                                    =");
   printf("\r\n=                                           By Firefly               =");
   printf("\r\n======================================================================");
