@@ -106,7 +106,7 @@ lvgl_app_create();
 /**********************
  *   STATIC FUNCTIONS
  **********************/
-
+lv_indev_t * indev_keypad;
 /**
  * Initialize the Hardware Abstraction Layer (HAL) for the LVGL graphics
  * library
@@ -151,8 +151,9 @@ static void hal_init(void)
   lv_indev_drv_init(&indev_drv_2); /*Basic initialization*/
   indev_drv_2.type = LV_INDEV_TYPE_KEYPAD;
   indev_drv_2.read_cb = sdl_keyboard_read;
-  lv_indev_t *kb_indev = lv_indev_drv_register(&indev_drv_2);
-  lv_indev_set_group(kb_indev, g);
+//  lv_indev_t *kb_indev = lv_indev_drv_register(&indev_drv_2);
+  indev_keypad = lv_indev_drv_register(&indev_drv_2);
+  lv_indev_set_group(indev_keypad, g);
 
   static lv_indev_drv_t indev_drv_3;
   lv_indev_drv_init(&indev_drv_3); /*Basic initialization*/

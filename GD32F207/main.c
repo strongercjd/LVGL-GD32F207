@@ -86,7 +86,7 @@ int main(void)
   gpio_bit_reset(GPIOE,GPIO_PIN_4);
   LCD_Init();
   Key_Init();
-	uart_init();
+  uart_init();
   printf("\r\n======================================================================");
   printf("\r\n=               (C) COPYRIGHT 2022                                   =");
   printf("\r\n=                                                                    =");
