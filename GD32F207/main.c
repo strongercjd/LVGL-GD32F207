@@ -41,6 +41,10 @@ OF SUCH DAMAGE.
 #include "LCD_disp.h"
 #include "key.h"
 #include "lvgl_app.h"
+
+extern void lv_port_disp_init(void);
+extern void lv_port_indev_init(void);
+
 void uart_init()
 {    
   /* enable GPIO clock */
@@ -90,7 +94,7 @@ int main(void)
   printf("\r\n======================================================================");
   printf("\r\n=               (C) COPYRIGHT 2022                                   =");
   printf("\r\n=                                                                    =");
-  printf("\r\n=                GD32F20x LVGL                                      =");
+  printf("\r\n=                GD32F20x LVGL                                       =");
   printf("\r\n=                                                                    =");
   printf("\r\n=                                           By Firefly               =");
   printf("\r\n======================================================================");
