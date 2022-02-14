@@ -5,6 +5,8 @@ CONFIG -= qt
 
 LIBS += -L$$PWD/lib/ -lmingw32 -lSDL2main -lSDL2
 
+INCLUDEPATH += ../Third_Party/LVGL/
+
 SOURCES += \
         ../LVGL-APP/lvgl_app.c \
         ../Third_Party/LVGL/lvgl/examples/anim/lv_example_anim_1.c \

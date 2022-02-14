@@ -1,4 +1,4 @@
-#include "../Third_Party/LVGL/lvgl/lvgl.h"
+#include "lvgl/lvgl.h"
 
 const uint8_t mouse_cursor_icon_map[] = {
 #if LV_COLOR_DEPTH == 1 || LV_COLOR_DEPTH == 8
